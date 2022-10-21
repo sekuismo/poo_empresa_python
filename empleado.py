@@ -1,3 +1,4 @@
+
 from persona import Persona
 
 
@@ -25,10 +26,27 @@ class Empleado(Persona):
         
         self._lista_empleado.append(nuevo_empleado)
 
-        
+    def mostrarLista(self):
+        return self._lista_empleado
+
+#pasamos como  parámetro una instancia que está declarada como variable en el main
+    def buscarEmpleado(self,empleado):
+        while True:
+            rut = input('ingrese el rut del empleado a buscar :    ')
+            for empleado in self.mostrarLista():
+                if rut in empleado:
+                    print('existe el empleado!')
+                    print(f' el empleado es {empleado} ' )
+                    break
+                else:
+                    print('No existe, busque otro!')
 
 
 
+
+
+
+# se declara una variable para contar el número del empleado
     def mostrarTodos(self):
         num = 0
         for empleado in self._lista_empleado:
@@ -36,8 +54,7 @@ class Empleado(Persona):
             print('empleado número ',num, empleado)
 
     
-    def mostrarLista(self):
-        return self._lista_empleado
+
 
 
     def __del__(self):
