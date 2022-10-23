@@ -1,6 +1,7 @@
 from persona import Persona
 class Admin(Persona):
-    def __init__(self,clave_admin='1234',rut='11111111',clave='15B16K',nombre='Daniel',cargo='Administrador'):
+    #clave admin 1234  clave 2 = 15B16K  rut = 11111111
+    def __init__(self,clave_admin='1',rut='1',clave='1',nombre='Daniel',cargo='Administrador'):
         super().__init__(rut,clave,nombre,cargo)
         self._clave_admin = clave_admin
 

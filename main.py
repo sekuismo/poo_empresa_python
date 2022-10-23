@@ -67,13 +67,13 @@ def subMenu():
                         time.sleep(0.1)
                         print('Opción 1 Ingresar empleado'.center(100,'-'),'\n')
                         time.sleep(0.1)
-                        print('Opción 2 Eliminar el último empleado ingresado'.center(100,'-'),'\n')
+                        print('Opción 2 Eliminar un empleado'.center(100,'-'),'\n')
                         time.sleep(0.1)
                         print('Opción 3 Modificar empleado'.center(100,'-'),'\n')
                         time.sleep(0.1)
                         print('Opción 4 Buscar empleado'.center(100,'-'),'\n')
                         time.sleep(0.1)
-                        print('Opción 5 Mostrar empleado'.center(100,'-'),'\n')
+                        print('Opción 5 Mostrar a todos los empleados'.center(100,'-'),'\n')
                         time.sleep(0.1)
                         print('Opción 6 Volver al menú principal'.center(100,'-'),'\n')
                         time.sleep(0.2)
@@ -84,8 +84,8 @@ def subMenu():
                         if op2 == '1':
                             nuevo_empleado.addEmpleado()
                         if op2 == '2':
-                            nuevo_empleado.mostrarLista().pop()
-                            print('empleado eliminado!')
+                            nuevo_empleado.subEmpleado()
+                            
                         if op2 == '3':
         #Segundo submenú
                             print('Bienvenido al  tercer submenú '.center(100,'-'),'\n')
@@ -99,22 +99,14 @@ def subMenu():
                             print('Opción 4 Volver al menú'.center(100,'-'),'\n')
                             time.sleep(0.1)
 
-                            op3 = input('ingreso :    ')
-
-                            if op3 == '1':
-                                print('no hay nada aquí aún ')
-                            elif op3 == '2':
-                                print('no hay nada aquí ahora')
-                            elif op3 == '3':
-                                print('nada aquí por ahora')
-                            elif op3 == '4':
-                                print('volvemos al inicio! ')
+                            nuevo_empleado.modificarEmpleado()
                         
                         
                         if op2 == '4':
                             
                             
                             nuevo_empleado.buscarEmpleado()
+
 
                         if op2 == '5':
                             nuevo_empleado.mostrarTodos()
