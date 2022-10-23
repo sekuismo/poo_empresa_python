@@ -114,7 +114,7 @@ def subMenu():
                         if op2 == '4':
                             
                             
-                            nuevo_empleado.buscarEmpleado(nuevo_empleado.mostrarLista())
+                            nuevo_empleado.buscarEmpleado()
 
                         if op2 == '5':
                             nuevo_empleado.mostrarTodos()
@@ -138,3 +138,7 @@ def subMenu():
         
 
 subMenu()
+
+
+
+            
