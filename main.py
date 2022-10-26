@@ -10,7 +10,7 @@ nuevo_empleado =Empleado()
 
 
 def ayuda():
-    nombre = input('Ingresa tu nombre')
+    nombre = input('Ingresa tu nombre :      ')
     print(f'lo siento {nombre} No podemos ayudarte :(')
 
 
@@ -124,7 +124,7 @@ def subMenu():
         if inicio_sesion == '2':
             print('Acceso Denegado!')
         if inicio_sesion == '3':
-            ayuda()
+            print('Acceso Denegado!')
         if inicio_sesion == '4':
             break
         

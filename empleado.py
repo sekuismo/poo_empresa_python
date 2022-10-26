@@ -26,6 +26,9 @@ class Empleado(Persona):
         cargo = input('ingrese su nuevo cargo:   ')
         self._cargo = cargo
 
+#se reutiliza el código de la función buscarEmpleado
+# al iterar y buscar en el índice de la lista de objetos  se accede al objeto que coincida con el rut
+#a través de los métodos set se modifican los datos
 
     def modificarEmpleado(self):
 
@@ -59,8 +62,7 @@ class Empleado(Persona):
                         e.setCargo()
                 print('cargo  modificado!')
         
-        else:
-            print('no existe ese empleado :(')
+
         
 
 
@@ -123,7 +125,7 @@ class Empleado(Persona):
 
 
     def __del__(self):
-        print('se eliminó la instancia'.center(30,'-'))
+        print('se eliminó correctamente a la persona del sistema!'.center(30,'-'))
 
 
 
